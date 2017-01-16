@@ -2,7 +2,20 @@
 times each of the 26 letters in the alphabet occurred. Ignore all non-alphabetic characters. 
 The program should be case-insensitive, i.e., each letter count 
 includes both the lowercase and the uppercase letters.*/
-
+/*
+Example:
+Input:
+aBbcCcDDDDeeeeefFfFfFG
+Output:
+A: 1
+B: 2
+C: 3
+D: 4
+E: 5
+F: 6
+G: 1
+Also prints letters which include X: 0, but are not shown in this docstring
+*/
 
 #include <stdio.h>
 #include <ctype.h>
