@@ -1,6 +1,12 @@
 /*Write a function with signature int countChars(const char* s, const char* charsOfInterest) 
 that returns a count of the number of characters in the string s that also appear in the string charsOfInterest.*/
 
+/*
+Example:
+printf("%d\n", countChars("ABBCCCDDD!", "BC!5"));
+Result:
+6
+*/
 int countChars(const char* s, const char* charsOfInterest)
 {
 	int counter = 0;
