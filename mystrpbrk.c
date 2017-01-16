@@ -1,6 +1,17 @@
 /*Write a function mystrpbrk that behaves like 
 strpbrk without using any of the functions in <string.h>*/
-
+/*
+Example:
+char* testString = "abc123!";
+char* p = mystrpbrk(testString, "23bx");
+if (p != NULL) {
+    printf("'%c' found at position %zd\n", *p, p - testString);
+} else {
+    puts("Not found");
+}
+Result:
+'b' found at position 1
+*/
 char *mystrpbrk(char *s, char *accept)
 {
 	int index = 0;
