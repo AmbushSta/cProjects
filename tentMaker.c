@@ -1,5 +1,13 @@
 /*Write a function with signature void printTent(int n) that displays an open "tent" shape of stars of size n */
-
+/* 
+Example:
+printTent(5)
+    *
+   * *
+  *   *
+ *     *
+*       *
+*/
 
 void printTent(int n)
 {	
