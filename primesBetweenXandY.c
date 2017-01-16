@@ -1,6 +1,15 @@
 /*Write a C program that uses scanf to read two integers n1 and n2, where n1 > 1 and n2 >= n1. 
 The program should then print all the prime numbers between n1 and n2 inclusive.*/
 
+/*
+Example:
+Input: 2 10
+Output:
+2
+3
+5
+7
+*/
 #include <stdio.h>
 #include <string.h>
 
