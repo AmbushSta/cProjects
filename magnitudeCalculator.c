@@ -34,22 +34,20 @@ int main(void)
 		return 0;
 	}
 	while(lastNum >= 0){
-		scanf("%d", &lastNum);
-		while(lastNum == middleNum){
-			scanf("%d", &lastNum);
-		}
-		if(lastNum < 0){
-			return 0;
-		}
-		if(middleNum > firstNum && middleNum > lastNum){
-			peakPrint(middleNum, currentLine);
-			currentLine += 1;
-		}
-		firstNum = middleNum;
-		middleNum = lastNum;
-	}
+	    scanf("%d", &lastNum);
+	    while(lastNum == middleNum){
+                scanf("%d", &lastNum);
+	    }
+	    if(lastNum < 0){
+	        return 0;
+	    }
+	    if(middleNum > firstNum && middleNum > lastNum){
+		peakPrint(middleNum, currentLine);
+		currentLine += 1;
+	    }
+	    firstNum = middleNum;
+	    middleNum = lastNum;
+    }
 	
-	return 0;
-	
-	
+    return 0;
 }
