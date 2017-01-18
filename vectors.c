@@ -1,5 +1,3 @@
-
-
 typedef struct vector2d_s Vector2d;
 
 struct vector2d_s{
@@ -28,5 +26,4 @@ Vector2d v2 = vector(11, 1);
 Vector2d v3 = vectorSum(v1, v2);
 printf("(%d, %d) + (%d, %d) = (%d, %d)\n",
         v1.x, v1.y, v2.x, v2.y, v3.x, v3.y);
-	
 /*
