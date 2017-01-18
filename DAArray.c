@@ -12,7 +12,7 @@ Result:
 
 int* ramp(int n)
 {
-	int* number = malloc(n * sizeof(int));
+    int* number = malloc(n * sizeof(int));
 	int index = 0;
 	for(int i = 1; i <= n; i++){
 		*(number + index) = i;
