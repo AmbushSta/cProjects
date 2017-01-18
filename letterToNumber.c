@@ -3,24 +3,18 @@ input value onto it's numerical digit*/
 /*
 Example:
 Input:
-Go ENCE260!
+TE ST123
 End
 Result:
-'G': Letter 7
-'o': Letter 15
+'T': Letter 20
+'E': Letter 5
 ' ': Non-alphanumeric
-'E': Letter 5
-'N': Letter 14
-'C': Letter 3
-'E': Letter 5
+'S': Letter 20
+'T': Letter 19
+'1': Digit 1
 '2': Digit 2
-'6': Digit 6
-'0': Digit 0
 '!': Non-alphanumeric
 '\n'
-'E': Letter 5
-'n': Letter 14
-'d': Letter 4
 '\n'
 */
 
