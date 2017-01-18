@@ -14,9 +14,8 @@ int countChars(const char* s, const char* charsOfInterest)
 	for(int n = 0; n < strlen(charsOfInterest);n++){
 		if(s[i] == charsOfInterest[n]){
 		counter += 1;
-		}
+	    }
 	}
     }
     return counter;
-	
 }
