@@ -29,10 +29,10 @@ int main(void)
     int middleNum = 0;
     int lastNum = 0;
     int currentLine = 1;
-	scanf("%d %d", &firstNum, &middleNum);
-	if(firstNum < 0 || middleNum < 0){
-		return 0;
-	}
+    scanf("%d %d", &firstNum, &middleNum);
+    if(firstNum < 0 || middleNum < 0){
+	return 0;
+    }
 	while(lastNum >= 0){
 	    scanf("%d", &lastNum);
 	    while(lastNum == middleNum){
