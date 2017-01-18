@@ -3,7 +3,7 @@ input value onto it's numerical digit*/
 /*
 Example:
 Input:
-TE ST123
+TE ST12!
 End
 Result:
 'T': Letter 20
