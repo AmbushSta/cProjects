@@ -26,10 +26,10 @@ int main(void)
 	if(isalpha(c)){
 		c = toupper(c);
 		array[c-65] = array[c-65] + 1;
-	        }
-	c = getchar();
 	}
-	for(int x = 0; x <= 25; x++){
-	    printf("%c: %d\n", x + 65, array[x]);
+	c = getchar();
+    }
+    for(int x = 0; x <= 25; x++){
+	printf("%c: %d\n", x + 65, array[x]);
     }
 }
