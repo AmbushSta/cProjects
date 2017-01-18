@@ -1,11 +1,10 @@
 #include <stdio.h>
-//Michael Cowie 20th July 2016
 /*Given a sequence of numbers, calculate a number which is higher than
- it's surrounding numbers (i.e the Magnitude) */
- /*
- Example:
- Input: 
- 1 7 20 20 25 300
+ it's surrounding numbers (i.e the Magnitude) 
+ 
+Example:
+Input: 
+1 7 20 20 25 300
 27 25 2 0 5 2
 100 100 100 0
 4 5 5 0 100 -1
@@ -19,8 +18,8 @@ Number  Magnitude
  
 void peakPrint(int middleNum, int currentLine)
 {
-	printf("%4d", currentLine);
-	printf("%11d\n", middleNum);
+    printf("%4d", currentLine);
+    printf("%11d\n", middleNum);
 }
 int main(void)
 {
