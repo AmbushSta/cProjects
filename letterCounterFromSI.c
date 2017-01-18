@@ -1,4 +1,5 @@
 /*Reads from standard input until EOF and displays the count of each character
+Accepts non alphabetical characters but simply skips over them
 
 Example:
 Input:
