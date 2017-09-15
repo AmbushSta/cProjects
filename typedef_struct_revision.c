@@ -27,10 +27,10 @@ int main()
     
     XY o2 = {intp, 2};  /*
                         You can't create struct objects when declaring the struct inside a type def, it must
-                        now be created.
+                        now be created
                         */
     *(o2.x) = 10;       /*
-                        Not a pointer to a struct.
+                        Not a pointer to a struct object
                         (*object1).a = 6; is equivilent to object1->a = 6;
                         */
     printf("%i %i", *o2.x, o2.y);
