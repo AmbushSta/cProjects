@@ -25,14 +25,14 @@ int main()
     *(object1->a) = 6;
     printf("%i %i\n", *(object1->a), object1->b);
     
-    XY o2 = {intp, 2}; /*
-                    You cannot create struct objects on decleration before,
-                    now you have to create them
-                    */
-    *(o2.x) = 10; /*
-                    Not a pointer to a struct.
-                    (*object1).a = 6; is equivilent to object1->a = 6;
-                    */
+    XY o2 = {intp, 2};  /*
+                        You cannot create struct objects on decleration before,
+                        you have to create them now
+                        */
+    *(o2.x) = 10;       /*
+                        Not a pointer to a struct.
+                        (*object1).a = 6; is equivilent to object1->a = 6;
+                        */
     printf("%i %i", *o2.x, o2.y);
     
     return 0;
