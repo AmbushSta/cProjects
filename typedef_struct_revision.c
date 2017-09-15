@@ -15,7 +15,7 @@ typedef struct tupleAB tupleAB;  //Allows me to define the type as "tupleAB" not
 struct tupleAB{
     int *a;
     int b;
-} *object1, object2; //Creates two structs
+} *object1, object2; //Creates two struct objects
 
 
 
@@ -23,12 +23,12 @@ int main()
 {
     int *intp = malloc(sizeof(int));
     tupleAB o1 = {intp, 5};
-    object1 = &o1; //The object was created, but initially pointed to nothing
+    object1 = &o1; //The struct object was created, but initially pointed to nothing
     *(object1->a) = 6;
     printf("%i %i\n", *(object1->a), object1->b);
     
     XY o2 = {intp, 2}; /*
-                    You cannot create structs on decleration before,
+                    You cannot create struct objects on decleration before,
                     now you have to create them
                     */
     *(o2.x) = 10; /*
