@@ -19,7 +19,7 @@ struct tupleAB {
 
 int main()
 {
-    int *intp = malloc(sizeof(int));
+    int *intp = malloc(sizeof(*intp));
     tupleAB o1 = {intp, 5};
     object1 = &o1; //The struct object was created, but initially pointed to nothing
     *(object1->a) = 6;
