@@ -12,7 +12,7 @@ typedef struct{
 
 typedef struct tupleAB tupleAB;  //Allows me to define the type as "tupleAB" not "struct tupleAB"
 
-struct tupleAB{
+struct tupleAB {
     int *a;
     int b;
 } *object1, object2; //Creates two struct objects
