@@ -23,7 +23,7 @@ int main()
 {
     int *intp = malloc(sizeof(int));
     tupleAB o1 = {intp, 5};
-    object1 = &o1; //The object is created, but initially pointed to nothing
+    object1 = &o1; //The object was created, but initially pointed to nothing
     *(object1->a) = 6;
     printf("%i %i\n", *(object1->a), object1->b);
     
