@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-    Because I keep forgetting how to use typedef's, I have create this simple
-    cheat sheet.
-*/
-
 typedef struct{
     int *x;
     int y;
