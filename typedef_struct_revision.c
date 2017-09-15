@@ -26,8 +26,8 @@ int main()
     printf("%i %i\n", *(object1->a), object1->b);
     
     XY o2 = {intp, 2};  /*
-                        You cannot create struct objects on decleration before,
-                        you have to create them now
+                        You can't create struct objects when declaring the struct inside a type def, it must
+                        now be created.
                         */
     *(o2.x) = 10;       /*
                         Not a pointer to a struct.
