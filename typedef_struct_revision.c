@@ -17,8 +17,6 @@ struct tupleAB{
     int b;
 } *object1, object2; //Creates two struct objects
 
-
-
 int main()
 {
     int *intp = malloc(sizeof(int));
@@ -37,6 +35,5 @@ int main()
                     */
     printf("%i %i", *o2.x, o2.y);
     
-
     return 0;
 }
