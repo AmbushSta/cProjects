@@ -1,6 +1,6 @@
 /*Reading from standard input printing each letter as it's number, or any other standard
-input value onto it's numerical digit*/
-/*
+input value onto it's numerical digit
+
 Example:
 Input:
 TE ST12!
@@ -30,21 +30,19 @@ int main(void)
 		if(isdigit(c)){
 			printf("'%c': Digit %c\n",c,c);
 			c = getchar();
-		}
-		else if(isalpha(c)){
+		} else if(isalpha(c)){
 			if(isupper(c)){
 				printf("'%c': Letter %d\n",c,c-64);
 				c = getchar();
 			}
-			else{
+			else {
 				printf("'%c': Letter %d\n",c,c-96);
 				c = getchar();
 			}
 		}
-		else{
+		else {
 			printf("'%c': Non-alphanumeric\n",c);
 			c = getchar();
 		}
     }
-	
 }
