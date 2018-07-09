@@ -26,12 +26,7 @@ int main(void)
     char c = 0;
     c = getchar();
     // Read characters until newline or EOF
-    while(c != EOF) {
-	if(c == '\n'){
-		printf("'\\n'\n");
-		c = getchar();
-	}
-	else {
+    while(c != EOF && c != '\n') {
 		if(isdigit(c)){
 			printf("'%c': Digit %c\n",c,c);
 			c = getchar();
@@ -50,8 +45,6 @@ int main(void)
 			printf("'%c': Non-alphanumeric\n",c);
 			c = getchar();
 		}
-	}
-		
     }
 	
 }
