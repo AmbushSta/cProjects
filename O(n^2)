@@ -1,0 +1,54 @@
+//INCOMPLETE
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void removeIndex(int* list, int index, int len){
+    for(int i = index; i < len - 1; i++){
+        list[i] = list[i+1];
+    }
+}
+
+int* sort(int* unsorted, int len){
+     int* sorted = malloc(len * sizeof(int));
+     
+     for(int placement = 0; placement < len; placement++){
+         int smallest_index = 0;
+         int smallest = unsorted[smallest_index];
+         int len_unsorted = len - placement;
+         
+         for(int i = 0; i < len_unsorted; i++){
+            if (unsorted[i] < smallest){
+                smallest = unsorted[i];
+                smallest_index = i;
+            }    
+         }
+         
+         removeIndex(unsorted, smallest_index, len_unsorted);
+         sorted[placement] = smallest;
+     }
+    
+    return sorted;
+}
+
+int main()
+{
+    int len = 5;
+    int* unsorted = malloc(len * sizeof(int));
+    for(int i = 0; i < len; i++){
+        unsorted[i] = i;
+    }
+    
+    int* sorted = sort(unsorted, len);
+    
+    for(int i = 0; i < len; i++){
+        printf("%d\n", sorted[i]);
+    }
+    return 0;
+}
+
+
+// notes
+// had static array
+// had a local variable returned
