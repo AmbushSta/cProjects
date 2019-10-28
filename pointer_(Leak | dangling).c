@@ -30,8 +30,6 @@ int main()
     int* ptr = malloc(sizeof(int));
     free(ptr);
     *ptr = 10; //Valid operation
-    printf("%d", *ptr);
-    
-    f();
+    printf("%d", *ptr); // Using a free'd pointer can result in unpredictable changes.
     return 0;
 }
