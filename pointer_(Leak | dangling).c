@@ -20,8 +20,9 @@ void f(){
 
 /*
     Example of a dangling pointer, the pointer had been free'd but is still
-    being used. Freeing a pointer allows it to be overwritten, at any pointer
-    it is possible for the value to be changed.
+    being used. Freeing a pointer allows it to be overwritten, at any time
+    during execution it is possible for the value to be changed randomly if
+    something else wants to use that piece of memory.
 */
 
 int main()
